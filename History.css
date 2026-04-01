@@ -1,0 +1,158 @@
+/*
+ * * * * * * * * * * * * * * 
+        PAGES
+ * * * * * * * * * * * * * * * 
+*/
+
+* {
+  box-sizing: border-box; /* padding counts inward, not outward */
+}
+
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+.box {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.home-page{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100px;
+  background: white;
+  gap: 50px;
+  padding: 0px 40px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #1e293c;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease ;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: block;
+    /* align-items: flex-start; */
+    /* gap: 20px; */
+}
+.card-inner {
+    display: block;
+    /*flex: 1;
+    text-align: left;
+    */
+}
+
+.card2 { 
+    background: #1e293b;
+    border-radius: 32px;
+    margin-top: 10px;
+    padding: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease ;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * * * * * * * * * * * * * * 
+        TEXT
+ * * * * * * * * * * * * * * * 
+*/
+
+.h1 {
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+
+.h2 {
+    margin-bottom: 10px;
+    color: #38bdf8
+}
+
+.p {
+    line-height: 1.6;
+    color: #cbd5f5;
+}
+
+.span {
+    background-color: rgb(255 255 255 / 50%);
+}
+
+/*
+ * * * * * * * * * * * * * * 
+        IMAGES 
+ * * * * * * * * * * * * * * * 
+*/
+
+.splash-image {
+  width: 100%;          /* Fills the card, never overflows */
+  max-width: 400px;     /* But won't stretch larger than 400px */
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: block;  
+}
+
+.mini-image {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.mini-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * * * * * * * * * * * * * * 
+        NAV BAR
+ * * * * * * * * * * * * * * * 
+*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 1000;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
