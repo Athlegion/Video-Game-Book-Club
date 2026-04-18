@@ -4,67 +4,17 @@
  * * * * * * * * * * * * * * * 
 */
 
-
-
 body {
-
     margin: 0;
     background: #0f172a;
     color: #e2e8f0;
     font-family: 'Inter', sans-serif;
 }
 
-/* Hollow Knight Backdrop */
-.box-HK {
+.box {
     padding: 20px;
     min-height: 100vh;
-    background-image: url("../assets/HKBackground.webp");
-
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat; 
 }
-/* Sable Backdrop */
-.box-SB {
-    padding: 20px;
-    min-height: 100vh;
-    background-image: url("../assets/Sable_art.webp");
-
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat; 
-}
-/* TTYD Backdrop */
-.box-TTYD {
-    padding: 20px;
-    min-height: 100vh;
-    background-image: url("../assets/TTYD_Backdrop.jpg");
-
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat; 
-}
-/* DarkSouls Backdrop */
-.box-DS {
-    padding: 20px;
-    min-height: 100vh;
-    background-image: url("../assets/DS_backdrop.jpg");
-
-    background-size: cover;        
-    background-position: right;   
-    background-repeat: no-repeat; 
-}
-/* Persona 5 Backdrop */
-.box-P5 {
-    padding: 20px;
-    min-height: 100vh;
-    background-image: url("../assets/P5_backdrop.png");
-
-    background-size: cover;        
-    background-position: right;   
-    background-repeat: no-repeat; 
-}
-
 
 .home-page{  
   display: flex;
@@ -98,20 +48,18 @@ body {
     /* gap: 20px; */
 }
 .card-inner {
-    display: block;
-    /*flex: 1;
-    text-align: left;
-    */
+    border-radius: 14px;
+    padding: 32px;
+    background:#80b3ff;
 }
 
 .card2 { 
     background: #1e293b;
-    border-radius: 10px;
+    border-radius: 32px;
     margin-top: 10px;
     padding: 32px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease ;
-    min-height: 80vh;
 }
 .card:hover {
     transform: translateY(-5px);
@@ -129,25 +77,16 @@ body {
    font-size: 2.5rem;
    margin-bottom: 20px;
 }
-.h1-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
 
 .h2 {
     margin-bottom: 10px;
-    color: #38bdf8
+    color: white;
+    text-align: center;
 }
 
 .p {
     line-height: 1.6;
     color: #cbd5f5;
-}
-.p-nice {
-    line-height: 1.6;
-    color: #cbd5f5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .span {
@@ -170,14 +109,6 @@ body {
 
 .mini-image {
     width: 120px;
-    height: 160px;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-.reg-image {
-    width: 240px;
     height: 160px;
     border-radius: 10px;
     margin: 10px 0;

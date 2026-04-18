@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VGBC</title>
+        <link rel="stylesheet" href="../css/Account.css">
+    </head>
+
+    <body>
+    
+        <!-- NAVBAR -->
+         <nav class="navbar">
+            <h2>Video Game Book Club</h2>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="History.html">History</a>
+                <a href="About.html">About</a>
+                <a href="Account.html">Account</a>
+            </div>
+         </nav>
+
+        <!-- MAIN CONTENT -->
+         <div class="box">
+            <div class="container">
+                <div class="card">
+                    <h2 class="h2">Create an Account/Log In</h2>
+                    <div class="card-inner">
+                        <form id="account-form" data-mode="signup">
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Password">
+                            </div>
+                            <div>
+                                <button type="submit" id="signup-button">Create Account</button>
+                                <button type="submit" id="login-button">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    <!-- FIREBASE MODULE PLUGIN -->
+    <script type="module" src="../firebase.js"></script>
+    </body>
+</html>
